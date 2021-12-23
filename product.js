@@ -140,7 +140,6 @@ product_router.get('/view', async (req, res) => {
     var supplier = await db.collection('suppliers').findOne({'_id' : mongo.ObjectID(product.supplier_id)});
     // console.log(category);
     
-
     const template = handlebars.compile(fs.readFileSync('views/product/view.hbs', 'utf-8'));
     const result = template({
         product : product,
