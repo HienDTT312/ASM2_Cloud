@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 // product_router.set('view engine', 'hbs');
 // product_router.use(express.static(__dirname + '/public'));
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) { // kiem tra xxem file co dc cham nhan hay ko
+    destination: function (req, file, cb) { // kiem tra xem file co dc cham nhan hay ko
         cb(null, './public/uploads');
     },
     filename: function (req, file, cb) {

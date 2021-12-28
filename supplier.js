@@ -79,9 +79,9 @@ supplier_router.post('/addSupplier', async (req, res) => {
 })
 
 
+ 
 
-
-
+ 
 supplier_router.get('/view', async (req, res) => {
     let id = req.query.id;
     const client = await MongoClient.connect(uri, {

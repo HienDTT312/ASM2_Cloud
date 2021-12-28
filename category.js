@@ -77,7 +77,6 @@ category_router.get('/update', async (req,res) => {
     })
 })
 
-
 category_router.post('/updateCategory', async (req,res) => {
 
 
